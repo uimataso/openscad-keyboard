@@ -14,20 +14,33 @@ include <lib.scad>
 include <components.scad>
 
 // Main keys
+// Number of keys on each columns.
 main_key_nums = [3, 3, 3, 3, 2];
+// Phi of each columns.
 main_key_col_phis = [20, 20, 20, 20, 20];
+// Translate of each columns.
 main_key_col_trans = [[2, 3], [2, 3], [5, 0], [2, 2], [0, 5]]; // [y, z]
+// Gap between each columns.
 main_key_col_gap = 2;
+// Tilted of whole main keys.
 main_key_whole_tilted = [-20, 10, 0];
+// Translate of whole main keys.
 main_key_whole_trans = [10, 20, 20];
 
 // Thumb keys
+// Number of thumb key.
 thumb_key_num = 2;
+// Phi of thumb key.
 thumb_key_phi = 20;
+// Theta of thumb key.
 thumb_key_theta = 20;
+// Titled of thumb key.
 thumb_key_tilted = [0, -40, 0];
+// Translate of thumb key.
 thumb_key_trans = [0, 0, 15];
+// Nth key that thumb key attach with.
 thumb_attach_side = 1;
+// Nth key that thumb key attach with.
 thumb_attach_bottom = 2;
 
 // MAIN KEY
