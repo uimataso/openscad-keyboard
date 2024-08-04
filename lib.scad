@@ -13,6 +13,14 @@ function mapply(ms) =
     len(ms) == 1 ? ms[0] :
     ms[0] * mapply([ for(i=[1 : len(ms)-1]) ms[i] ]);
 
+// Multmatrix that do nothing.
+mnone = [
+    [1,  0,  0,  0],
+    [0,  1,  0,  0],
+    [0,  0,  1,  0],
+    [0,  0,  0,  1]
+];
+
 // Multmatrix version of translate.
 function mtranslate(v) = [
     [1,  0,  0,  v.x],
@@ -83,3 +91,7 @@ module pillar(points) {
     );
     polyhedron(points, faces);
 }
+
+function is_int(x) = x - floor(x) == 0;
+
+function nnorm(v) = v / norm(v);
